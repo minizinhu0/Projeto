@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <title>Gestão financeira</title>
+</head>
+
+<body>
+
+    <main>
+        <form method="post" action="login.php">
+            <div>
+                <h1 class="typewriter">
+                    Educação<span>Financeira</span> </h1>
+            </div>
+
+            <h3 class="typewriter">Login</h3>
+            <input type="text" placeholder="Nome de usuário" id="email" name="email" required>
+            <br><br><br>
+            <input type="password" placeholder="Senha" id="password" name="senha"> <!-- Adicionado o atributo name -->
+            <i class="bi bi-eye" id="btn-senha" onclick="mostrarSenha()"></i>
+            <br><br><br>
+            <button type="submit" class="button">Entrar</button> <!-- Alterado onclick para type="submit" -->
+            <br><br><br><br><br>
+            <h3 id="cadastro">Ainda não possui cadastro?</h3>
+            <button class="button" onclick="cadastro()">Cadastre-se</button>
+            <!-- <a class="forgot-password" href="error-404.html"><p>Esqueceu sua senha?</p></a> -->
+        </form>
+    </main>
+
+
+    <script src="JS/index.js"></script>
+</body>
+
+</html>
